@@ -24,14 +24,14 @@ class Stack{
     }
     void pop()
     {
-        if(top==-1){
+        if(isEmpty()){
             cout<<"Stack Is Empty\n";
         }
         else top--;
     }
     int topEl()
     {
-        if(top>=0)return arr[top];
+        if(!isEmpty())return arr[top];
         else cout<<"Stack Is Empty\n";
         return -1;
     }
