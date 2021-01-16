@@ -2,10 +2,10 @@
 using namespace std;
 
 class Stack{
-   public:
+   private:
     int top=-1;
     int arr[100];
-    
+    public:
     int isEmpty(){
         return top==-1;
     }
