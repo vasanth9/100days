@@ -8,13 +8,15 @@ class Queue{
     public:
     void EnQueue(int ele){
         if(isFull()){
-            cout<<"Queue is Full\n";
+            cout<<"Queue is Full.\n";
         }else{
         arr[tail]=ele;
         tail==9?tail=0:tail++;}
     }
     void Dequeue(){
+       if(!isEmpty())
        head==9?head=0:head++;
+       else cout<<"Queue Is Empty.\n";
     }
     int isEmpty()
     {
@@ -30,7 +32,7 @@ class Queue{
         {
             return arr[head];
         }
-        else cout<<"Queue Is Empty\n";
+        else cout<<"Queue Is Empty.\n";
         return -1;
     }
 
@@ -68,5 +70,7 @@ int main()
         q.Dequeue();
 
     }
+    q.Dequeue();
+    q.Dequeue();
 
 }
