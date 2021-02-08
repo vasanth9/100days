@@ -1,0 +1,9 @@
+main{
+    width:90vw;
+    margin:5rem auto;
+    max-width:620px;
+}
+.title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
